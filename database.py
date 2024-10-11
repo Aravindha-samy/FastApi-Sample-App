@@ -5,7 +5,7 @@ engine = create_engine(settings.postgres_url, echo=True)
 
 def create_db_and_tables():
     SQLModel.metadata.create_all(engine)
-    print("Database created")
+    print("Database connected successfully")
 
 def get_session():
     """Dependency to get a new SQLModel session"""
